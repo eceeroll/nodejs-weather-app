@@ -24,7 +24,7 @@ form.addEventListener('submit', (e) => {
             } else {
                 loading.classList.add('hide');
                 locationElement.textContent = data.name;
-                forecast.textContent = data.forecast;
+                forecast.innerHTML = data.forecast;
             }
         })
     })

@@ -12,12 +12,12 @@ const forecast = (lat, lon, callback) => {
     } else {
       callback(
         undefined,
-        response.body.current.weather_descriptions[0] +
-          ", It is currently " +
-          response.body.current.temperature +
-          " degress out. And it feels like " +
-          response.body.current.feelslike +
-          "degrees out."
+       `Description: ${response.body.current.weather_descriptions[0]}   
+         Temperature: ${response.body.current.temperature} °C  
+         Feels like: ${response.body.current.feelslike}  ° C
+         Precip: ${response.body.current.precip}
+ `
+          
       );
     }
   });
