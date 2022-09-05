@@ -1,12 +1,11 @@
 console.log("Client side javascript file loaded");
 
-const url = `http://localhost:3000/weather?address=`
+const url = `/weather?address=`
 const form = document.querySelector('form')
 const input = document.querySelector('input')
 const loading = document.getElementById('loading')
 const locationElement = document.getElementById('location')
 const forecast = document.getElementById('forecast')
-
 
 form.addEventListener('submit', (e) => {
 
